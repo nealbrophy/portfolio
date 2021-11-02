@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 main {
@@ -70,6 +71,59 @@ i {
   background-color: hsla(0, 100%, 0%, 0.35);
 }
 
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.project-wrapper img {
+  margin: 0 auto;
+  animation: in-and-up;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  transform: translate(50%, 350%);
+}
 
+@keyframes in-and-up {
+  from {
+    transform: scale(0);
+    transform: translate(-800%, 2000%);
+    
+  }
+  to {
+    transform: scale(1.0);
+    transform: translate(50%, 350%);
+    
+  }
+}
 
+/*.project-cards {
+  position: absolute;
+  height: 60%;
+  width: 70%;
+  top: 20%;
+  left: 20%;
+  z-index: 4;
+  animation: projects;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes projects {
+  from {
+    z-index: 0;
+    top: 100%;
+    left: 0%;
+    transform: scale(0);
+    transform: translate(0%, 1200%);
+  }
+  to {
+    z-index: 3;
+    top: 20%;
+    left: 20%;
+    transform: scale(1.0);
+    transform: translate(350%, 350%);
+  }
+}*/

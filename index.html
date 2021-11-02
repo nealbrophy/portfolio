@@ -29,7 +29,37 @@
 		<!-- MAIN DESKTOP AREA -->
 		
 		<main class="col-12">
-			<div class="overlay"></div>
+			<div class="overlay">
+				<div class="project-wrapper">
+					<img src="images/getHubby.png" style="width: 200px; height: 100px;" alt="">
+					<img src="images/linuxCommandGeneratorv1.png" class="rounded float-end" style="width: 200px; height: 100px;"alt="">
+				</div>
+				<!-- PROJECTS -->
+
+				<!-- project cards -->
+				<!-- <div class="project-cards row">
+					<div class="col-sm-6">
+						<div class="card project-1" style="width: 18rem;">
+							<img src="images/getHubby.png" class="card-img-top" alt="preview image of GetHubby project">
+							<div class="card-body">
+								<h5 class="card-title">GetHubby</h5>
+								<p class="card-text">An imagined dating site for developers</p>
+								<a href="https://nealbrophy.github.io/GetHubby/" target="_blank" class="btn btn-primary">Open</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card project-2" style="width: 18rem;">
+							<img src="images/linuxCommandGeneratorv1.png" class="card-img-top" alt="preview image of Linux Command Generator project">
+							<div class="card-body">
+								<h5 class="card-title">Linux Command Gen v1</h5>
+								<p class="card-text">A handy list of linux commands for distro-hoppers</p>
+								<a href="https://nealbrophy.github.io/LinuxCommandGenerator_v1.1/" target="_blank" class="btn btn-primary">Open</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
 			<section class="desk-intro">
 				<img src="images/neal.jpg" alt="" class="img-thumbnail">
 				<h1>Hi, I'm Neal!</h1>
@@ -41,35 +71,39 @@
 
 		<!-- Contact Modal -->
 		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="contactModalLabel">LinkedIn/NealBrophy</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		      </div>
-		      <div class="modal-body">
-		        INSERT CONTACT FORM
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
-		      </div>
-		    </div>
-		  </div>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="contactModalLabel">LinkedIn/NealBrophy</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						INSERT CONTACT FORM
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
+
+
+	<!-- JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script>
 		function layOver() {
 			if (document.querySelector('.overlay').style.display == "block") {
 				document.querySelector('.overlay').style.display = "none";
 			} else {
-			document.querySelector('.overlay').style.display = "block";
+				document.querySelector('.overlay').style.display = "block";
 			}
 		}
 		function layOff(e) {
 			if (e.keyCode == 27) {
-			document.querySelector('.overlay').style.display = "none";
+				document.querySelector('.overlay').style.display = "none";
 			}
 		}
 
