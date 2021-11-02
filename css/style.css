@@ -1,9 +1,15 @@
+ /* ============
+    GLOBAL
+   ============ */
 html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
+/* =============
+    TAG STYLES
+   ============= */
 main {
   background-color: rebeccapurple;
   position: relative;
@@ -20,6 +26,12 @@ i {
   font-size: 2.5rem;
 }
 
+
+/* ==============
+    CLASS STYLES
+   ============== */
+
+/* row wrapper */
 .row {
   height: 100%;
   width: 100%;
@@ -27,6 +39,7 @@ i {
 
 }
 
+/* lefthand panel */
 .panel {
   position:  absolute;
   left: 0;
@@ -44,15 +57,9 @@ i {
   align-content: center;
 }
 
+/* resize bio icon */
 .fa-address-card {
   font-size: 2rem;
-}
-
-.projects-button {
-  position: absolute;
-  bottom: 2px;
-  display: flex;
-  flex-direction: row;
 }
 
 .desk-intro img {
@@ -61,6 +68,7 @@ i {
   border-radius: 50%;
 }
 
+/* blur overlay for project menu */
 .overlay {
   display: none;
   backdrop-filter: blur(6px);
@@ -71,6 +79,14 @@ i {
   left: 0;
   top: 0;
   background-color: hsla(0, 100%, 0%, 0.35);
+}
+
+/* project menu  */
+.projects-button {
+  position: absolute;
+  bottom: 2px;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-wrapper {
@@ -87,11 +103,16 @@ i {
   text-align: center;
 }
 
-.project-wrapper figure > img {
+.project-wrapper figure img {
   height: 350px;
   width: 550px;
 }
 
+/* ==============
+    ANIMATIONS
+   ============== */
+
+/* project image zoom in and scale up */
 @keyframes in-and-up {
   from {
     transform: scale(0);
@@ -104,3 +125,7 @@ i {
     
   }
 }
+
+/* ================
+    MEDIA QUERIES
+   ================ 

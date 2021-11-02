@@ -10,11 +10,13 @@
 </head>
 <body>
 	<div class="row">
-		<!-- HEADER W/ NAV -->
+		<!--==================
+			HEADER W/ NAV
+			================== -->
 		<header class="panel">
 			<nav class="navbar flexparent">
 				<ul class="navbar-nav flexparent">
-					<li class="nav-item"><a class="btn" data-bs-toggle="modal" data-bs-target="#contactModal"><i class="fas fa-envelope-square"></i></a></li>
+					<li class="nav-item"><a href="mailto:nbrophy@pm.me" class="btn"><i class="fas fa-envelope-square"></i></a></li>
 					<li class="nav-item"><a href="https://github.com/nealbrophy" target="_blank" class="btn"><i class="fab fa-github-square"></i></a></li>
 					<li class="nav-item"><a class="btn"><i class="fas fa-address-card"></i></a></li>
 					<li class="nav-item"><a href="https://www.linkedin.com/in/nealbrophy" target="_blank"class="btn"><i class="fab fa-linkedin"></i></a></li>
@@ -26,24 +28,34 @@
 				</a>
 			</nav>
 		</header>
-		<!-- MAIN DESKTOP AREA -->
+		<!--===================
+			 MAIN DESKTOP AREA
+			=================== -->
 		
 		<main class="col-12">
 
-			<!-- PROJECT MENU -->
+			<!-- ------------- 
+				PROJECT MENU 
+				-------------- -->
 			<div class="overlay">
 				<div class="project-wrapper">
 					<figure class="project-1">
-						<img src="images/getHubby.png" alt="">
+						<a href="https://nealbrophy.github.io/GetHubby/" target="_blank">
+							<img src="images/getHubby.png" alt="Screenshot of GetHubby homepage (links to live version)">
+						</a>
 						<figcaption>GetHubby: An imagined dating site for developers</figcaption>
 					</figure>
 					<figure class="project-2">
-						<img src="images/linuxCommandGeneratorv1.png" alt="">
+						<a href="https://nealbrophy.github.io/LinuxCommandGenerator_v1.1/" target="_blank">
+							<img src="images/linuxCommandGeneratorv1.png" alt="Screenshot of Linux Command Generator homepage (links to live version)">
+						</a>
 						<figcaption>Linux Command Generator: A tool for distro-hoppers</figcaption>
 					</figure>
 				</div>
 
-			<!-- INTRO -->
+			<!-- ------------
+					INTRO
+				------------- -->
 			</div>
 			<section class="desk-intro">
 				<img src="images/neal.jpg" alt="" class="img-thumbnail">
@@ -52,9 +64,13 @@
 			</section>
 		</main>
 
-		<!-- MODALS -->
+		<!-- ==============
+				MODALS
+			=============== -->
 
-		<!-- Contact Modal -->
+		<!-- ---------------
+			Contact Modal
+			--------------- -->
 		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -76,7 +92,9 @@
 
 
 
-	<!-- JS -->
+	<!-- ==========
+			JS
+		 ========== -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script>
 		function layOver() {
