@@ -7,7 +7,9 @@ html, body {
 main {
   background-color: rebeccapurple;
   position: relative;
+  left: 70px;
   flex-grow: 1;
+  color: white;
 }
 
 nav {
@@ -73,16 +75,21 @@ i {
 
 .project-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
-.project-wrapper img {
+.project-wrapper figure {
   margin: 0 auto;
   animation: in-and-up;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
-  transform: translate(50%, 350%);
+  transform: translate(0%, 50%);
+  color: white;
+  text-align: center;
+}
+
+.project-wrapper figure > img {
+  height: 350px;
+  width: 550px;
 }
 
 @keyframes in-and-up {
@@ -93,37 +100,7 @@ i {
   }
   to {
     transform: scale(1.0);
-    transform: translate(50%, 350%);
+    transform: translate(0%, 50%);
     
   }
 }
-
-/*.project-cards {
-  position: absolute;
-  height: 60%;
-  width: 70%;
-  top: 20%;
-  left: 20%;
-  z-index: 4;
-  animation: projects;
-  animation-duration: .5s;
-  animation-timing-function: ease-in;
-
-}
-
-@keyframes projects {
-  from {
-    z-index: 0;
-    top: 100%;
-    left: 0%;
-    transform: scale(0);
-    transform: translate(0%, 1200%);
-  }
-  to {
-    z-index: 3;
-    top: 20%;
-    left: 20%;
-    transform: scale(1.0);
-    transform: translate(350%, 350%);
-  }
-}*/
