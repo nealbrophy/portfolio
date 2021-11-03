@@ -25,6 +25,10 @@ i {
   font-size: 2.5rem;
 }
 
+figcaption {
+  padding-top: .5rem;
+}
+
 
 /* ==============
     CLASS STYLES
@@ -63,6 +67,7 @@ i {
 
 .desk-intro {
   padding-left: 70px;
+  padding-top: 10px;
 }
 
 .desk-intro img {
@@ -95,6 +100,9 @@ i {
 .project-wrapper {
   display: flex;
   flex-direction: column;
+  width: 75%;
+  padding-left: 70px;
+  margin: 0 auto;
 }
 
 .project-wrapper figure {
@@ -110,9 +118,21 @@ i {
 
 .project-wrapper figure img {
   max-height: 450px;
-  height: 100%;
   max-width: 650px;
+  height: 100%;
   width: 100%;
+  z-index: 2;
+}
+
+.project-wrapper figure img:hover {
+  box-shadow: 0 0 7px hsla(360, 100%, 100%, 0.5);
+  animation: image-hover;
+  animation-timing-function: ease-in-out;
+  animation-duration: .2s;
+}
+
+.fa-external-link-alt {
+  font-size: 1rem;
 }
 
 /* ==============
@@ -133,8 +153,25 @@ i {
   }
 }
 
+
+@keyframes image-hover {
+  from {
+    box-shadow: 0 0 0px hsla(360, 100%, 100%, 0.0);
+  }
+  to {
+    box-shadow: 0 0 7px hsla(360, 100%, 100%, 0.5);
+  }
+}
+
 /* ================
     MEDIA QUERIES
    ================ 
-
 */
+
+@media (min-width: 1850px) {
+
+  .project-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
