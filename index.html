@@ -16,12 +16,11 @@
 		<header class="panel">
 			<nav class="navbar flexparent">
 				<ul class="navbar-nav flexparent">
-					<li class="nav-item"><a href="mailto:nbrophy@pm.me" class="btn"><i class="fas fa-envelope-square"></i></a></li>
-					<li class="nav-item"><a href="https://github.com/nealbrophy" target="_blank" class="btn"><i class="fab fa-github-square"></i></a></li>
-					<li class="nav-item"><a class="btn"><i class="fas fa-address-card"></i></a></li>
-					<li class="nav-item"><a href="https://www.linkedin.com/in/nealbrophy" target="_blank"class="btn"><i class="fab fa-linkedin"></i></a></li>
+					<li class="nav-item"><a href="mailto:nbrophy@pm.me" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Open email to: nbrophy@pm.me"><i class="fas fa-envelope-square"></i></a></li>
+					<li class="nav-item"><a href="https://github.com/nealbrophy" target="_blank" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Open Github profile"><i class="fab fa-github-square"></i></a></li>
+					<li class="nav-item"><a href="https://www.linkedin.com/in/nealbrophy" target="_blank"class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Open LinkedIn profile"><i class="fab fa-linkedin"></i></a></li>
 				</ul>
-				<a class="projects-button btn" onclick="overlayOn()">
+				<a class="projects-button btn" onclick="overlayOn()" data-bs-toggle="tooltip" data-bs-placement="right" title="Open projects menu">
 					<i class="fas fa-ellipsis-v"></i>
 					<i class="fas fa-ellipsis-v"></i>
 					<i class="fas fa-ellipsis-v"></i>
@@ -43,13 +42,13 @@
 						<a href="https://nealbrophy.github.io/GetHubby/" target="_blank">
 							<img class="img-responsive" src="images/getHubby.png" alt="Screenshot of GetHubby homepage (links to live version)">
 						</a>
-						<figcaption>GetHubby: An imagined dating site for developers <i class="fas fa-external-link-alt"></i></figcaption>
+						<figcaption>GetHubby: A dating site for developers <a href="https://github.com/nealbrophy/GetHubby" target="_blank"><i class="fas fa-external-link-alt"></i></a></figcaption>
 					</figure>
 					<figure class="project-2">
 						<a href="https://nealbrophy.github.io/LinuxCommandGenerator_v1.1/" target="_blank">
 							<img class="img-responsive" src="images/linuxCommandGeneratorv1.png" alt="Screenshot of Linux Command Generator homepage (links to live version)">
 						</a>
-						<figcaption>Linux Command Generator: A tool for distro-hoppers <i class="fas fa-external-link-alt"></i></figcaption>
+						<figcaption>Linux Command Generator: A tool for distro-hoppers <a href="https://github.com/nealbrophy/LinuxCommandGenerator_v1.1" target="_blank"><i class="fas fa-external-link-alt"></i></a></figcaption>
 					</figure>
 				</div>
 
@@ -58,38 +57,13 @@
 				------------- -->
 			</div>
 			<section class="desk-intro">
-				<img src="images/neal.jpg" alt="" class="img-thumbnail">
-				<h1>Hi, I'm Neal!</h1>
-				<p>A Full Stack Python, Javascript, and Java developer based in Dublin, Ireland</p>
+				<img src="images/neal.jpg" alt="" >
+				<h1>Hi, I'm <span>Neal</span>!</h1>
+				<p>A Full Stack <span>Python <i class="fab fa-python"></i></span>, <span>Javascript <i class="fab fa-js"></i></span>, and <span>Java <i class="fab fa-java"></i></span> developer based in Dublin, Ireland.</p>
 			</section>
 		</main>
-
-		<!-- ==============
-				MODALS
-			=============== -->
-
-		<!-- ---------------
-			Contact Modal
-			--------------- -->
-		<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="contactModalLabel">Contact</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						INSERT CONTACT FORM
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-
+	<footer>Made by Me. Inspired by <a href="https://foundation.gnome.org/" target="_blank">Gnome</a> and <a href="https://ubuntu.com/" target="_blank">Ubuntu</a>.</footer>
 
 
 	<!-- ==========

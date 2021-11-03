@@ -4,17 +4,44 @@
 html, body {
   height: 100%;
   width: 100%;
+}
 
+a {
+  color: hsl(191, 97%, 77%);
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+  color: hsl(326, 100%, 74%);
+  text-decoration: underline;
+}
+
+a:active,
+a:visited:active {
+  color: hsl(0, 100%, 67%);
+}
+
+a:visited {
+  color: hsl(265, 89%, 78%);
 }
 
 /* =============
     TAG STYLES
    ============= */
 main {
-  background-color: rebeccapurple;
+  background-color: hsl(232, 14%, 31%);
   position: relative;
   flex-grow: 1;
-  color: white;
+  color: hsl(60, 30%, 96%);
+}
+
+h1 span {
+  color: hsl(65, 92%, 76%);
+}
+
+p span {
+  color: hsl(0, 100%, 67%);
 }
 
 nav {
@@ -25,8 +52,21 @@ i {
   font-size: 2.5rem;
 }
 
+p i {
+  font-size: 1.5rem;
+}
+
+
 figcaption {
   padding-top: .5rem;
+}
+
+footer {
+  font-size: .8rem;
+  color: hsl(60, 30%, 96%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 
@@ -39,7 +79,6 @@ figcaption {
   height: 100%;
   width: 100%;
   margin: 0;
-
 }
 
 /* lefthand panel */
@@ -49,8 +88,26 @@ figcaption {
   height: 100%;
   max-width: 70px;
   z-index: 3;
-  background-color: white;
+  background-color: hsl(232, 15%, 18%);
   padding: 0;
+}
+
+.navbar-nav i {
+  color: hsl(265, 89%, 78%);
+  transition: color .4s;
+}
+
+.navbar-nav i:hover {
+  color: hsl(326, 100%, 74%); 
+}
+
+.projects-button {
+  color: hsl(0, 100%, 67%);
+  transition: .4s;
+}
+
+.projects-button:hover {
+  color: hsl(0, 100%, 77%);
 }
 
 .flexparent {
@@ -58,11 +115,6 @@ figcaption {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-}
-
-/* resize bio icon */
-.fa-address-card {
-  font-size: 2rem;
 }
 
 .desk-intro {
@@ -74,6 +126,7 @@ figcaption {
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%;
+  border: 5px solid hsl(65, 92%, 76%);
 }
 
 /* blur overlay for project menu */
@@ -112,7 +165,7 @@ figcaption {
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
   transform: translate(0%, 25%);
-  color: white;
+  color: hsl(60, 30%, 96%);
   text-align: center;
 }
 
@@ -125,10 +178,10 @@ figcaption {
 }
 
 .project-wrapper figure img:hover {
-  box-shadow: 0 0 7px hsla(360, 100%, 100%, 0.5);
+  box-shadow: 0 0 15px hsla(0, 100%, 67%, 0.5);
   animation: image-hover;
   animation-timing-function: ease-in-out;
-  animation-duration: .2s;
+  animation-duration: .15s;
 }
 
 .fa-external-link-alt {
@@ -153,13 +206,13 @@ figcaption {
   }
 }
 
-
+/*hsl(0, 100%, 67%)*/
 @keyframes image-hover {
   from {
-    box-shadow: 0 0 0px hsla(360, 100%, 100%, 0.0);
+    box-shadow: 0 0 0px hsla(0, 100%, 67%, 0.0);
   }
   to {
-    box-shadow: 0 0 7px hsla(360, 100%, 100%, 0.5);
+    box-shadow: 0 0 15px hsla(0, 100%, 67%, 0.5);
   }
 }
 
