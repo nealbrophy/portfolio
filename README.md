@@ -2,6 +2,8 @@
 ## Work In Progress
 This site is intended to be a portfolio of my development work and is very much a work in progress. At present the site uses HTML, CSS, Bootstrap, and minimal JS.
 
+The site is [available to view on Github pages](https://nealbrophy.github.io/portfolio/).
+
 ### Color Scheme
 [Dracula](https://draculatheme.com/) by Zeno Rocha
 
