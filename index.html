@@ -21,7 +21,7 @@
 					<li class="nav-item"><a class="btn"><i class="fas fa-address-card"></i></a></li>
 					<li class="nav-item"><a href="https://www.linkedin.com/in/nealbrophy" target="_blank"class="btn"><i class="fab fa-linkedin"></i></a></li>
 				</ul>
-				<a class="projects-button btn" onclick="layOver()">
+				<a class="projects-button btn" onclick="overlayOn()">
 					<i class="fas fa-ellipsis-v"></i>
 					<i class="fas fa-ellipsis-v"></i>
 					<i class="fas fa-ellipsis-v"></i>
@@ -41,13 +41,13 @@
 				<div class="project-wrapper">
 					<figure class="project-1">
 						<a href="https://nealbrophy.github.io/GetHubby/" target="_blank">
-							<img src="images/getHubby.png" alt="Screenshot of GetHubby homepage (links to live version)">
+							<img class="img-responsive" src="images/getHubby.png" alt="Screenshot of GetHubby homepage (links to live version)">
 						</a>
 						<figcaption>GetHubby: An imagined dating site for developers</figcaption>
 					</figure>
 					<figure class="project-2">
 						<a href="https://nealbrophy.github.io/LinuxCommandGenerator_v1.1/" target="_blank">
-							<img src="images/linuxCommandGeneratorv1.png" alt="Screenshot of Linux Command Generator homepage (links to live version)">
+							<img class="img-responsive" src="images/linuxCommandGeneratorv1.png" alt="Screenshot of Linux Command Generator homepage (links to live version)">
 						</a>
 						<figcaption>Linux Command Generator: A tool for distro-hoppers</figcaption>
 					</figure>
@@ -75,7 +75,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="contactModalLabel">LinkedIn/NealBrophy</h5>
+						<h5 class="modal-title" id="contactModalLabel">Contact</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -97,20 +97,30 @@
 		 ========== -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script>
-		function layOver() {
-			if (document.querySelector('.overlay').style.display == "block") {
-				document.querySelector('.overlay').style.display = "none";
+		let overlay = document.querySelector('.overlay');
+
+		// toggle project menu overlay
+		function overlayOn() {
+			if (overlay.style.display === "block") {
+				overlay.style.display = "none";
 			} else {
-				document.querySelector('.overlay').style.display = "block";
-			}
-		}
-		function layOff(e) {
-			if (e.keyCode == 27) {
-				document.querySelector('.overlay').style.display = "none";
+				overlay.style.display = "block";
 			}
 		}
 
-		window.addEventListener('keydown', layOff);
+		function overlayOff() {
+			overlay.style.display = "none";
+		}
+
+		// hide project menu overlay when ESC pressed
+		function escapeOverlay(e) {
+			if (e.keyCode === 27 && overlay.style.display === "block") {
+				overlayOff();
+			}
+		}
+
+		// listen for keypresses
+		window.addEventListener('keydown', escapeOverlay);
 	</script>
 </body>
 </html>

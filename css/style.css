@@ -4,7 +4,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+
 }
 
 /* =============
@@ -13,7 +13,6 @@ html, body {
 main {
   background-color: rebeccapurple;
   position: relative;
-  left: 70px;
   flex-grow: 1;
   color: white;
 }
@@ -62,9 +61,13 @@ i {
   font-size: 2rem;
 }
 
+.desk-intro {
+  padding-left: 70px;
+}
+
 .desk-intro img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 50%;
 }
 
@@ -91,21 +94,25 @@ i {
 
 .project-wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .project-wrapper figure {
   margin: 0 auto;
+  margin-bottom: 2rem;
   animation: in-and-up;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
-  transform: translate(0%, 50%);
+  transform: translate(0%, 25%);
   color: white;
   text-align: center;
 }
 
 .project-wrapper figure img {
-  height: 350px;
-  width: 550px;
+  max-height: 450px;
+  height: 100%;
+  max-width: 650px;
+  width: 100%;
 }
 
 /* ==============
@@ -121,7 +128,7 @@ i {
   }
   to {
     transform: scale(1.0);
-    transform: translate(0%, 50%);
+    transform: translate(0%, 25%);
     
   }
 }
@@ -129,3 +136,5 @@ i {
 /* ================
     MEDIA QUERIES
    ================ 
+
+*/
